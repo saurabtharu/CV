@@ -35,7 +35,6 @@
 
 #let header(
   name: "Jake Ryan",
-  // position: "DevOps Engineer",
   phone: "123-456-7890",
   email: "jake@su.edu",
   linkedin: "linkedin.com/in/jake",
@@ -46,13 +45,12 @@
   align(center,
     block[
       #name_header(name) \
-      // #position \
-       #fa-icon("phone", solid: true) #h(2pt) #link("tel:" + phone) | 
-       #fa-icon("envelope", solid: true) #h(2pt) #link("mailto:" + email)[#email] |
-       #fa-icon("linkedin", solid: true) #h(2pt) #link("https://linkedin.com/in/saurabtharu")[#linkedin] |
-       #fa-icon("github", solid: true) #h(2pt) #link("https://github.com/saurabtharu")[#github] |
-       // #fa-icon("gitlab", solid: true) #h(2pt) #link("https://gitlab.com/saurabtharu")[#gitlab] |
-       #fa-icon("globe", solid: true) #h(2pt) #link("https://www.saurabtharu.com.np")[#portfolio]
+       #fa-icon("phone", solid: true) #link("tel:" + phone) |  #fa-icon("envelope", solid: true)
+      #link("mailto:" + email)[#email] |
+       #fa-icon("linkedin", solid: true) #link("https://linkedin.com/in/saurabtharu")[#linkedin] |
+       #fa-icon("github", solid: true) #link("https://github.com/saurabtharu")[#github] |
+       // #fa-icon("gitlab", solid: true) #link("https://gitlab.com/saurabtharu")[#gitlab] |
+       #fa-icon("globe", solid: true) #link("https://www.saurabtharu.com.np")[#portfolio]
        
     ]
   )
@@ -61,6 +59,7 @@
 
 #let resume_heading(txt) = {
   show heading: set text(size: 0.92em, weight: "regular")
+
   block[
     = #smallcaps(txt)
     #v(-4pt)
@@ -116,19 +115,19 @@
 #let project_item(
   name: "Example Project",
   skills: "Programming Language 1, Database3",
-  date: "May 1234 - June 4321",
+  source_code: "https://github.com/saurabtharu/nand2tetris",
   ..points
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, box[
-    *#name* | _#skills _ #h(1fr) #date
+    *#name* | _#skills _ #h(1fr) #fa-icon("github", solid: true) #link( source_code )[Source Code] 
     #list(..points)
   ])
 }
 
 #let skill_item(
-  category: "skills",
-  skills: "balling, yoga, valorant",
+  category: "Skills",
+  skills: "Balling, Yoga, Valorant",
 ) = {
   set block(above: 0.7em)
   set text(size: 0.91em)
