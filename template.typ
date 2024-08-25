@@ -7,7 +7,7 @@
 
 #let resume(body) = {
   set list(indent: 1em)
-  show list: set text(size: 0.92em)
+  show list: set text(size: 0.99em)
   show link: underline
   show link: set underline(offset: 3pt)
 
@@ -17,7 +17,7 @@
   )
 
   set text(
-    size: 11pt,
+    size: 12pt,
       font: "New Computer Modern",
   )
 
@@ -25,7 +25,7 @@
 }
 
 #let name_header(name) = {
-  set text(size: 2.25em)
+  set text(size: 2.37em)
   [*#name*]
 }
 
@@ -135,6 +135,7 @@
 }
 
 
+
 #let achievement_item(
   achievement: "achievement",
   organization: "organization akshdf lashfdl halksdfh asldkfh alksdfh",
@@ -142,7 +143,31 @@
 ) = {
   set block(above: 0.7em)
   set text(size: 0.91em)
-  pad(left: 1em, right: 0.5em, block[*#achievement*: #h(1fr) #organization \
+  pad(left: 1em, right: 0.5em, block[*#achievement* #h(1fr) #organization \
   #description])
+}
+
+#let certificate_item(
+  cert_name: "achievement",
+  description: "this is the description of the achievement",
+) = {
+  set block(above: 0.7em)
+  set text(size: 0.91em)
+  pad(left: 1em, right: 0.5em, block[*#cert_name* #h(1fr) \
+  #description])
+}
+
+
+#let paper_item(
+  paper_name: "Example Paper",
+  doi: "Programming Language 1, Database3",
+  paper_link: "https://github.com/saurabtharu/nand2tetris",
+  points
+) = {
+  set block(above: 0.7em, below: 1em)
+  pad(left: 1em, right: 0.5em, box[
+    *#paper_name* | _#doi _ #h(1fr) #fa-icon("paperclip", solid: true) #link( paper_link)[Link] \
+    #points
+  ])
 }
 
