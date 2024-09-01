@@ -1,4 +1,4 @@
-#import "template.typ": *
+#import "template.typ": resume, header, resume_heading, edu_item, exp_item, project_item, skill_item, achievement_item, certificate_item, paper_item
 
 
 #show: resume
@@ -52,6 +52,17 @@
 )
 */
 #resume_heading([*Academics and Personal Projects*])
+
+#project_item(
+  name: "Terraform Project for Kubernetes Cluster Setup",
+  skills: "Terraform, Ansible",
+  source_code: "https://github.com/saurabtharu/terraform-k8s",
+  [Built a Terraform project to automate the provisioning of a Kubernetes cluster on AWS.],
+  [Utilized Ansible for post-provisioning tasks, including the installation of essential tools and configuration of the cluster.],
+  // [Developed API for serving the list of similar movies based on metadata associated with it.],
+)
+
+
 #project_item(
   name: "Image Restoration using GAN",
   skills: "Python - Pytorch",
@@ -60,14 +71,13 @@
   [Gained hands-on experience in deep learning and neural network training with PyTorch, enhancing skills in image processing.],
 )
 
-/*
 #project_item(
   name: "Hack Computer",
   skills: "HDL",
   source_code: "https://github.com/saurabtharu/nand2tetris",
-  [Created Register, RAM, ROM, ALU, CPU from basic logic gates],
+  [Followed the Nand2Tetris curriculum to create a hardware architecture using HDL, building components like the Register, RAM, ROM, ALU, and CPU from basic logic gates.],
+  [Developed a deep understanding of computer architecture by designing and simulating a fully functional computer system from the ground up.]
 )
-*/
 
 #project_item(
   name: "Movie Recommendation System",
@@ -119,7 +129,7 @@
 
 
 
-
+#pagebreak()
 
 #resume_heading([*Technical Skills*])
 #skill_item(
@@ -134,7 +144,7 @@
 
 #skill_item(
   category: "Monitoring Tools",
-  skills: "Grafana, Prometheus, Loki, Promtail, ELK Stack, Apache SkyWalking"
+  skills: "Grafana, Prometheus, Loki, Promtail, Jenkins, Terraform, Ansible, ELK Stack, Apache SkyWalking"
 )
 #skill_item(
   category: "Cloud Platforms",

@@ -1,7 +1,11 @@
 # Saurab's CV
 
 
-![Saurab's CV](https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV.jpg)
+
+<div align="center">
+	<img width = "50%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page1.jpg">
+	<img width = "50%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page2.jpg">
+</div>
 
 
 ## Usage
