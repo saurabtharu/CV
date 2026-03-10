@@ -75,7 +75,7 @@
 ) = {
   set block(above: 0.7em, below: 1em)
   pad(left: 1em, right: 0.5em, grid(
-    columns: (3fr, 1fr),
+    columns: (3fr, 1.2fr),
     align(left)[
       *#name* \
       _#degree _

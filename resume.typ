@@ -15,17 +15,74 @@
 
 
 
+// #resume_heading([*About Me*])
+// #set par(
+//   justify: true,
+// )
+// Aspiring Software Engineer and Researcher with a strong foundation in Distributed Systems, Operating Systems, and Systems Programming, passionate about low-level systems, kernel development, and performance optimization, proficient in Python, C/C++, Rust, and Bash.
+
+
+#set par(
+  justify: false,
+)
+#resume_heading([*Technical Skills*])
+#skill_item(
+  category: "DevOps Tools",
+  skills: "Linux-based systems (Arch Linux, Debian, RHEL), Git, Docker, Kubernetes, Jenknis, Tmux, Postman"
+)
+
+#skill_item(
+  category: "Programming & Tools",
+  skills: "Python, Pytorch, C/C++, Bash, SQL, Git, Docker, Ansible, Terraform, "
+)
+#skill_item(
+  category: "Observability Tools",
+  skills: "Loki Stack, OpenTelemetry, ELK Stack, SigNoz"
+)
+#skill_item(
+  category: "Cloud & Virtualization",
+  skills: "KVM, Microsoft Azure (Basic), Kubernetes"
+)
+
+#skill_item(
+  category: "Soft Skills",
+  skills: "Problem Solving, Self-learning, Adaptability"
+)
+
 #resume_heading[*Experience*]
+#exp_item(
+  role: "Associtate DevOps Engineer",
+  name: "HamroPatro Ltd.",
+  location: "Pulchowk, Lalitpur",
+  date: "Sep. 2024 - Present",
+  [Implemented observability and monitoring using ELK Stack, Loki Stack, SigNoz, OpenTelemetry, ClickHouse, and Vector (Datadog).],
+  [Worked with Kubernetes for distributed deployment of software applications.],
+  [Optimized log processing and query performance, improving debugging efficiency.],
+  [Migrated MySQL database from CentOS to RHEL-based system, ensuring minimal downtime.],
+  [Performed MySQL database tuning to enhance performance and query efficiency.],
+  [Worked with ISO 8583 (1987 and 1993 versions) for secure financial transaction processing and integration.]
+)
+#exp_item(
+  role: "Associtate DevOps Engineer",
+  name: "eSewa Ltd.",
+  location: "Pulchowk, Lalitpur",
+  date: "Sep. 2024 - Present",
+  [Implemented observability and monitoring using ELK Stack, Loki Stack, SigNoz, OpenTelemetry, ClickHouse, and Vector (Datadog).],
+  [Worked with Kubernetes for distributed deployment of software applications.],
+  [Optimized log processing and query performance, improving debugging efficiency.],
+  [Migrated MySQL database from CentOS to RHEL-based system, ensuring minimal downtime.],
+  [Performed MySQL database tuning to enhance performance and query efficiency.],
+  [Worked with ISO 8583 (1987 and 1993 versions) for secure financial transaction processing and integration.]
+)
 #exp_item(
   role: "DevOps Engineer - Internship",
   name: "F1Soft International Pvt. Ltd.",
   location: "Pulchowk, Lalitpur",
   date: "May 2024 - July 2024",
-  [Worked with Docker and Kubernetes to deploy containerized Nginx applications, including setting up self-signed SSL certificates.],
-  [Developed bash scripts to automate the installation and configuration of various applications.],
-  [Utilized Ansible to manage configuration files, software installations, and user creation, streamlining system administration and improving configuration consistency.],
-  [Worked with ELK stack and Loki Stack (Loki, Promtail, and Grafana) for centralized logging and real-time monitoring of system and application logs.],
-  [Configured MySQL replication to ensure data redundancy and enhance database reliability, facilitating efficient backup and recovery processes.],
+  [Deployed containerized Nginx applications using Docker and Kubernetes, securing them with self-signed SSL certificates.],
+  [Automated system configurations using Bash scripting and Ansible, improving consistency and efficiency.],
+  // [Utilized Ansible to manage configuration files, software installations, and user creation, streamlining system administration and improving configuration consistency.],
+  // [Configured MySQL replication to ensure data redundancy and enhance database reliability, facilitating efficient backup and recovery processes.],
 )
 
 /*
@@ -53,41 +110,53 @@
 */
 #resume_heading([*Academics and Personal Projects*])
 
+/*
 #project_item(
-  name: "Terraform Project for Kubernetes Cluster Setup",
-  skills: "Terraform, Ansible",
-  source_code: "https://github.com/saurabtharu/terraform-k8s",
-  [Built a Terraform project to automate the provisioning of a Kubernetes cluster on AWS.],
-  [Utilized Ansible for post-provisioning tasks, including the installation of essential tools and configuration of the cluster.],
-  // [Developed API for serving the list of similar movies based on metadata associated with it.],
+  name: "Hack Computer",
+  skills: "HDL",
+  source_code: "https://github.com/saurabtharu/nand2tetris",
+  [Designed a fully functional computer system from basic logic gates, implementing Register, RAM, ALU, CPU, and ROM.],
+  [Gained deep insights into computer architecture, instruction set design, and low-level hardware simulation.],
+  // [Followed the Nand2Tetris curriculum to create a hardware architecture using HDL, building components like the Register, RAM, ROM, ALU, and CPU from basic logic gates.],
+  // [Developed a deep understanding of computer architecture by designing and simulating a fully functional computer system from the ground up.]
 )
-
 
 #project_item(
   name: "Image Restoration using GAN",
   skills: "Python - Pytorch",
   source_code: "https://github.com/ReImage-CollegeProject/ReImage",
-  [Developed an image restoration system using the ‘pix2pix-GAN’ architecture, focusing on noise removal from images.],
-  [Gained hands-on experience in deep learning and neural network training with PyTorch, enhancing skills in image processing.],
-)
-
-#project_item(
-  name: "Hack Computer",
-  skills: "HDL",
-  source_code: "https://github.com/saurabtharu/nand2tetris",
-  [Followed the Nand2Tetris curriculum to create a hardware architecture using HDL, building components like the Register, RAM, ROM, ALU, and CPU from basic logic gates.],
-  [Developed a deep understanding of computer architecture by designing and simulating a fully functional computer system from the ground up.]
+  [Developed a GAN-based image restoration system using the pix2pix architecture, focusing on noise removal.],
+  [Explored deep learning models for image processing and trained networks for optimal reconstruction.],
+  // [Developed an image restoration system using the ‘pix2pix-GAN’ architecture, focusing on noise removal from images.],
+  // [Gained hands-on experience in deep learning and neural network training with PyTorch, enhancing skills in image processing.],
 )
 
 #project_item(
   name: "Movie Recommendation System",
   skills: "Python - DRF, MySQL, Redis",
   source_code: "https://github.com/Tech-Savvy-college-project/Movie-Recommendation-System",
-  [Created API using Django REST Framework to recommend movies based on metadata like genre, cast, and user preferences.],
-  [Integrated MySQL for data storage and Redis for in-memory caching for high performance and quick response times.],
-  // [Developed API for serving the list of similar movies based on metadata associated with it.],
+  [Built a Django-based API for movie recommendations using metadata analysis.],
+  [Integrated MySQL for data storage and Redis for in-memory caching, optimizing performance.],
+  // [Created API using Django REST Framework to recommend movies based on metadata like genre, cast, and user preferences.],
+  // [Integrated MySQL for data storage and Redis for in-memory caching for high performance and quick response times.],
+)
+*/
+
+#project_item(
+  name: "Terraform Project for Kubernetes Cluster Setup",
+  skills: "Terraform, Ansible",
+  source_code: "https://github.com/saurabtharu/terraform-k8s",
+  [Automated AWS Kubernetes cluster provisioning using Terraform and post-provisioning setup with Ansible.],
+  // [Built a Terraform project to automate the provisioning of a Kubernetes cluster on AWS.],
+  // [Utilized Ansible for post-provisioning tasks, including the installation of essential tools and configuration of the cluster.],
 )
 
+
+ 
+
+
+
+/*
 #project_item(
   name: "UNIX utility tool clones ",
   skills: "Rust, Clap ",
@@ -95,6 +164,7 @@
   [Recreated essential UNIX utility tools like echo, cat, head, less using Rust.],
   [Used the Clap crate for command-line argument parsing.],
   )
+*/
 
 
 // #project_item(
@@ -129,48 +199,35 @@
 
 
 
-#pagebreak()
-
-#resume_heading([*Technical Skills*])
-#skill_item(
-  category: "Programming Languages",
-  skills: "Python, Bash, C/C++, Rust, SQL"
-)
-#skill_item(
-  category: "DevOps Tools",
-  skills: "Linux-based systems (Arch Linux, Debian, RHEL), Git, Docker, Kubernetes, Jenknis, KVM, vim, Tmux, Postman, WSO2"
-)
-
-
-#skill_item(
-  category: "Monitoring Tools",
-  skills: "Grafana, Prometheus, Loki, Promtail, Jenkins, Terraform, Ansible, ELK Stack, Apache SkyWalking"
-)
-#skill_item(
-  category: "Cloud Platforms",
-  skills: "Basic knowledge of MicroSoft Azure"
-)
-
-#skill_item(
-  category: "Soft Skills",
-  skills: "Problem Solving, Self-learning, Adaptability"
-)
-
 
 #resume_heading[*Education*]
 #edu_item(
   name: "Asian College of Higher Studies (Tribhuvan University)",
   degree: "Bachelor of Science in Computer Science and Information Technology",
-  location: "Ekantakuna, Lalitpur",
+  location: "Lalitpur, Nepal",
   date: "Sep. 2019 - Jul. 2024"
 )
 
+
+#resume_heading[*Certifications*]
+
+
+
+#edu_item(
+  name: "Microdegree™ in Artificial Intelligence",
+  degree: "Focused on machine learning, deep learning, and AI applications",
+  location: "Fusemachines AI Fellowship 2024",
+  date: ""
+)
+
+/*
 #edu_item(
   name: "Trinity International SS & College",
   degree: "High School +2 in Science",
   location: "Dillibazar, Kathmandu",
   date: "Jul. 2017 - Jun. 2019"
 )
+*/
 
 
 
