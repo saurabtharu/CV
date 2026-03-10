@@ -3,8 +3,8 @@
 
 
 <div align="center">
-	<img width = "49%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page1.jpg">
-	<img width = "49%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page2.jpg">
+	<img width = "49%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page1.png">
+	<img width = "49%" src="https://raw.githubusercontent.com/saurabtharu/CV/main/Saurab_Tharu_CV_page2.png">
 </div>
 
 
